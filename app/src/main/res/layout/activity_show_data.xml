@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.baibhab.sleep1.showData">
+
+    <LinearLayout
+        android:id="@+id/showDataHeading"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:background="#994664">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/showDataText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:text="@string/showDataText"
+        android:textSize="25dp"
+        android:textAllCaps="true"
+        android:layout_below="@+id/showDataHeading"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/q1QuestionDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:text="@string/q1_Question"
+        android:textSize="21dp"
+        android:layout_below="@+id/showDataText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/q1AnswerDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q1QuestionDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q2QuestionDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q2_Question"
+        android:paddingLeft="5dp"
+        android:textSize="21dp"
+        android:layout_below="@+id/q1AnswerDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q2AnswerDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q2QuestionDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q3QuestionDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q3_Question"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q2AnswerDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q3AnswerDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q3QuestionDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q4QuestionDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q4_Question"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q3AnswerDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q4AnswerDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q4QuestionDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q5Display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/screen2_Text"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q4AnswerDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q5aQuestionDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q5a_Question"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q5Display"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q5aAnswerDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q5aQuestionDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q5bQuestionDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q5b_Question"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q5aAnswerDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q5bAnswerDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q5bQuestionDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q5cQuestionDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q5c_Question"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q5bAnswerDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q5cAnswerDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q5cQuestionDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q5dQuestionDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q5d_Question"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q5cAnswerDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q5dAnswerDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q5dQuestionDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q5eQuestionDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q5e_Question"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q5dAnswerDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q5eAnswerDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q5eQuestionDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q5fQuestionDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q5f_Question"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q5eAnswerDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q5fAnswerDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q5fQuestionDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q5gQuestionDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q5g_Question"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q5fAnswerDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q5gAnswerDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q5gQuestionDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q5hQuestionDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q5h_Question"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q5gAnswerDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q5hAnswerDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q5hQuestionDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q5iQuestionDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q5i_Question"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q5hAnswerDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q5iAnswerDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q5iQuestionDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q5jQuestionDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q5j_Question"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q5iAnswerDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q5jAnswerDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q5jQuestionDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q6QuestionDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q6_Question"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q5jAnswerDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q6AnswerDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q6QuestionDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q7QuestionDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q7_Question"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q6AnswerDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q7AnswerDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q7QuestionDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q8QuestionDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q8_Question"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q7AnswerDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q8AnswerDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q8QuestionDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q9QuestionDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q9_Question"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q8AnswerDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/q9AnswerDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q9QuestionDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkScoreButton"
+        android:layout_below="@+id/backShowDataButton"
+        android:text="Check Score"
+        android:layout_centerHorizontal="true"
+        android:onClick="checkScoreButtonOnClick"/>
+    <Button
+        android:id="@+id/backShowDataButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Back"
+        android:paddingLeft="5dp"
+        android:onClick="backShowDataButtonOnClick"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/q9AnswerDisplay" />
+
+
+</RelativeLayout>
+</ScrollView>

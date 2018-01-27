@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.baibhab.sleep1.date">
+
+    <LinearLayout
+        android:id="@+id/homeHeading"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:background="#48750a">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/homeHeading"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="41dp"
+        android:text="@string/date_Text"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/dateDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dateText"
+        android:layout_alignBottom="@+id/dateText"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/questionDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:text="@string/question_Date"
+        android:textSize="30dp"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@android:style/Widget.DeviceDefault.RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/questionDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp" />
+
+    <Button
+        android:id="@+id/nextDateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ratingBar"
+        android:layout_below="@+id/ratingBar"
+        android:layout_marginTop="50dp"
+        android:onClick="nextDateButtonOnClick"
+        android:text="@string/Button" />
+
+</RelativeLayout>

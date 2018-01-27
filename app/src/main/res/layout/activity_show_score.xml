@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.baibhab.sleep1.showScore">
+
+    <LinearLayout
+        android:id="@+id/showScoreHeading"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:background="#994664">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/showScoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="97dp"
+        android:text="A score of 5 or greater indicates a poor sleep"
+        android:textSize="18dp"
+        android:paddingLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/showScoreText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showScoreText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="Your score is :"
+        android:textSize="18dp"
+        android:paddingLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/showScoreResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showScoreText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:textSize="18dp"
+        android:paddingLeft="5dp" />
+
+    <Button
+        android:id="@+id/gotoHomeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="74dp"
+        android:onClick="gotoHomeButtonOnClick"
+        android:text="Go To Home" />
+</RelativeLayout>

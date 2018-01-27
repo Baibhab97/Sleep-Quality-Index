@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.baibhab.sleep1.screen1">
+
+    <LinearLayout
+        android:id="@+id/screen1Heading"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:background="#994664">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/q1Question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q1_Question"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/screen1Heading"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp" />
+
+    <EditText
+        android:id="@+id/q1Answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q1Question"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:paddingLeft="5dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <TextView
+        android:id="@+id/q2Question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/q2_Question"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q1Answer"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <EditText
+        android:id="@+id/q2Answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:paddingLeft="5dp"
+        android:inputType="number"
+        android:layout_below="@+id/q2Question"
+        android:layout_alignStart="@+id/q1Answer" />
+
+    <TextView
+        android:id="@+id/q2Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/q2Answer"
+        android:layout_marginStart="24dp"
+        android:layout_toEndOf="@+id/q2Answer"
+        android:text="@string/q2_Text"
+        android:textSize="20dp"
+        android:paddingLeft="5dp" />
+
+    <TextView
+        android:id="@+id/q3Question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q3_Question"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/q2Answer"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/q3Answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/q2Answer"
+        android:layout_below="@+id/q3Question"
+        android:ems="10"
+        android:paddingLeft="5dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <TextView
+        android:id="@+id/q4Question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q4_Question"
+        android:textSize="21dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/q3Answer"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/q4Answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/q3Answer"
+        android:layout_below="@+id/q4Question"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:paddingLeft="5dp"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/nextScreen1Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/q4Answer"
+        android:layout_alignBottom="@+id/q4Answer"
+        android:layout_alignEnd="@+id/q1Question"
+        android:onClick="nextScreen1ButtonOnClick"
+        android:text="@string/Button" />
+
+
+</RelativeLayout>
+</ScrollView>
